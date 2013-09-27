@@ -16,3 +16,12 @@ layout: default
 	{% endfor %}
 </ul>
 
+<ul>
+	{% for dino in site.pages %}
+		{% if dino.category == "herbivores" %}
+	<li>{{dino.name}}</li>
+		{% endif %}
+	{% endfor %}
+</ul>
+
+
